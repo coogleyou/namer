@@ -38,10 +38,10 @@ router.use('/wx', wechat(config.wechat, function (req, res, next) {
     // 回复高富帅(图文回复)
     res.reply([
       {
-        title: '你来我家接我吧',
-        description: '这是女神与高富帅之间的对话',
-        picurl: 'http://nodeapi.cloudfoundry.com/qrcode.jpg',
-        url: 'http://nodeapi.cloudfoundry.com/'
+        title: '百度一下',
+        description: '你也不知道',
+        picurl: 'https://www.baidu.com/img/bdlogo.png',
+        url: 'http://www.baidu.com/'
       }
     ]);
   }
