@@ -32,4 +32,4 @@ var config = {
   }
 };
 
-module.exports = _.merge(config[env], require('option') || {});
+module.exports = _.merge(config[env], require('./option') || {});
