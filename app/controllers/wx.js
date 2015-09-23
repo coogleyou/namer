@@ -10,7 +10,7 @@ module.exports = function(app){
   app.use('/', router);
 };
 
-router.use('/wx', wechat(config.wechat.token, function (req, res, next) {
+router.use('/wx', wechat(config.wechat, function (req, res, next) {
   // 微信输入信息都在req.weixin上
   var message = req.weixin;
   if (message.FromUserName === 'diaosi') {
